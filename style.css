@@ -580,6 +580,19 @@ object {
 .bypostauthor {
 }
 
+#author {
+	display: block;
+}
+
+#email {
+	display: block;
+}
+
+#url {
+	display: block;
+}
+
+
 /* =Widgets
 ----------------------------------------------- */
 
@@ -942,7 +955,6 @@ color: #d54e21;
 	z-index:500000;
 	overflow: hidden;
 }
-
 
 
 /* =Responsive Design
