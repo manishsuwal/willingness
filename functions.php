@@ -54,7 +54,7 @@ function willingness_setup() {
 	/**
 	 * Enable support for Editor Style
 	 */
-	add_editor_style( 'custom-editor-style.css' ); 
+	add_editor_style( 'custom-editor-style.css' );
 }
 endif; // willingness_setup
 add_action( 'after_setup_theme', 'willingness_setup' );
@@ -108,7 +108,7 @@ register_sidebar( array(
     'after_widget' => '</aside>',
     'before_title' => '<hr class="widget-top-hr">'.'<h1 class="widget-title">',
     'after_title' => '<hr class="widget-below-hr">'.'</h1>',
-  ) ); 
+  ) );
 
   /* Register footer Sidebar  */
 
@@ -119,7 +119,7 @@ register_sidebar( array(
     'after_widget' => '</aside>',
     'before_title' => '<hr class="widget-top-hr">'.'<h1 class="widget-title">',
     'after_title' => '<hr class="widget-below-hr">'.'</h1>',
-  ) ); 
+  ) );
 
   register_sidebar( array(
     'name' => __( 'Footer 2', 'willingness' ),
@@ -128,7 +128,7 @@ register_sidebar( array(
     'after_widget' => '</aside>',
     'before_title' => '<hr class="widget-top-hr">'.'<h1 class="widget-title">',
     'after_title' => '<hr class="widget-below-hr">'.'</h1>',
-  ) ); 
+  ) );
 
   register_sidebar( array(
     'name' => __( 'Footer 3', 'willingness' ),
@@ -137,7 +137,7 @@ register_sidebar( array(
     'after_widget' => '</aside>',
     'before_title' => '<hr class="widget-top-hr">'.'<h1 class="widget-title">',
     'after_title' => '<hr class="widget-below-hr">'.'</h1>',
-  ) ); 
+  ) );
 
   register_sidebar( array(
     'name' => __( 'Footer 4', 'willingness' ),
@@ -146,7 +146,7 @@ register_sidebar( array(
     'after_widget' => '</aside>',
     'before_title' => '<hr class="widget-top-hr">'.'<h1 class="widget-title">',
     'after_title' => '<hr class="widget-below-hr">'.'</h1>',
-  ) ); 
+  ) );
 
   /* End of footer Sidebar */
 
@@ -212,7 +212,7 @@ add_theme_support( 'custom-header', $args );
 
 
 /* options.php */
-require (get_template_directory() .'/options.php'); 
+require (get_template_directory() .'/options.php');
 
 
 /* Body Class */
