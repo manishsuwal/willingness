@@ -124,34 +124,34 @@ the header image displayed on the Appearance > Header admin panel.  *  * @see
 willingness_custom_header_setup().  */ function
 willingness_admin_header_style() { ?>     <style type="text/css">
 	.appearance_page_custom-header #headimg {
-         border: none;  
-         max-width: 1140px;    
+         border: none;
+         max-width: 1140px;
 }
 
-	#headimg h1,     
-	#desc {  
+	#headimg h1,
+	#desc {
 		margin-left: 50px;
 		text-shadow: 2px 2px #e6e6e6;
-}    
+}
 
-    #headimg h1 { 
-    	margin-left: 50px !important;  
+    #headimg h1 {
+    	margin-left: 50px !important;
     	font-size: 4em;
 		font-family: sans-serif;
 		font-weight: normal;
 		margin: 0.2em 0 .67em 0;
-}     
+}
 
 	#headimg h1 a {
-		text-decoration: none; 
+		text-decoration: none;
 		color: #4ca6cf;
 
-}     
+}
 
-	#desc { 
+	#desc {
 		padding: 0px 0px 20px 0px;
 		color: #404040;
-}     
+}
 
 	#headimg img {
 }     #     </style> <?php } endif;
