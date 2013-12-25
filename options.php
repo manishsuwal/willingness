@@ -47,8 +47,8 @@ function willingness_theme_options_init() {
 
 	add_settings_field( 'radio_buttons', __( 'Enable Searchbar?', 'willingness' ), 'willingness_settings_field_radio_buttons', 'theme_options', 'general' );
 
-	
-	
+
+
 }
 add_action( 'admin_init', 'willingness_theme_options_init' );
 
@@ -155,7 +155,7 @@ function willingness_radio_buttons() {
 			'value' => 'no',
 			'label' => __( 'No', 'willingness' )
 		),
-		
+
 	);
 
 	return apply_filters( 'willingness_radio_buttons', $radio_buttons );
@@ -340,11 +340,11 @@ function willingness_theme_options_validate( $input ) {
 	// The sample radio button value must be in our array of radio button values
 	if ( isset( $input['sample_radio_buttons'] ) && array_key_exists( $input['sample_radio_buttons'], willingness_sample_radio_buttons() ) )
 		$output['sample_radio_buttons'] = $input['sample_radio_buttons'];
-		
+
 	// The radio button value must be in our array of radio button values
 	if ( isset( $input['radio_buttons'] ) && array_key_exists( $input['radio_buttons'], willingness_radio_buttons() ) )
 		$output['radio_buttons'] = $input['radio_buttons'];
-		
+
 
 	// The sample textarea must be safe text with the allowed tags for posts
 	if ( isset( $input['sample_textarea'] ) && ! empty( $input['sample_textarea'] ) )
