@@ -733,7 +733,7 @@ font-weight: bold;
 line-height: 3em;
 background-color: #111;
 text-transform:uppercase;
-margin-top: -6px;
+margin-top: -7px;
 }
 
 
@@ -749,7 +749,7 @@ margin-top: -6px;
 
 .navigation-main ul ul {
 	background-color: #333;
-} 
+}
 
 .navigation-main .menu ul li ul.children {
 margin-top: 0px;
@@ -802,7 +802,7 @@ margin-top: 0px;
 	margin-bottom: 0.5em;
 }
 
-	
+
 
 .site-main .widget-area {
 	float: left;
@@ -813,7 +813,7 @@ margin-top: 0px;
 .site-footer {
 	clear: both;
 	width: 100%;
-	
+
 }
 .foo {
 margin: 0 auto;
@@ -899,14 +899,14 @@ color: #d54e21;
 	float: right;
 	max-width: 300px;
 }
- 	
+
 
 /* =Footer
 ----------------------------------------------- */
 .footer-sidebar{
 	width: 241px;
 	background-color: #FfF;
-	
+
 	display: inline-block;
 	float: left;
 	margin: 0px 15px;
@@ -919,7 +919,7 @@ color: #d54e21;
 	height:auto;
 	z-index:500000;
 	overflow: hidden;
-	border-top: #ccc dotted 1px;	
+	border-top: #ccc dotted 1px;
 }
 
 #footer-1{
@@ -970,15 +970,15 @@ color: #d54e21;
 	#colophon{width: 95%;}
     #primary { width:100%; }
     #secondary { width:75%; margin:0 auto; border:none; float: none;}
-    #right-sidebar { width:75%; margin:0 auto; border:none; float:none;}  
+    #right-sidebar { width:75%; margin:0 auto; border:none; float:none;}
 	.entry-title { font-size: 25px; }
 	.site-title {font-size: 3em; }
 	#footer-1 {width: 100%;}
 	#footer-2 {width: 100%;}
 	#footer-3 {width: 100%;}
 	#footer-4 {width: 100%;}
-	.foo{width: 75%;}	
-	
+	.foo{width: 75%;}
+
 }
 
 /* Tabled Portrait */
@@ -989,8 +989,8 @@ color: #d54e21;
 	#content: {width: 100%; margin: 0 auto; padding: 0}
 	#colophon{width: 100%;}
     #primary { width: 100%; margin: 0; border: none; }
-    #secondary { width:75%; margin:0 auto; border:none; float:none;}  
-    #right-sidebar { width:75%; margin:0 auto; border:none; float:none;}  
+    #secondary { width:75%; margin:0 auto; border:none; float:none;}
+    #right-sidebar { width:75%; margin:0 auto; border:none; float:none;}
     #header-right {display: none;}
 	.entry-title { font-size: 20px; font-weight: bold;}
 	.site-title {font-size: 2em; }
