@@ -1,14 +1,11 @@
-willingness WordPress theme, Copyright (C) 2013 Manish Suwal
-willingness WordPress theme is licensed under the terms GPL v2.
+Willingness WordPress theme, Copyright (C) 2013 Manish Suwal
+Willingness WordPress theme is licensed under the terms GPL v3.
 
 header.png
-Licence: Distributed under the terms of the GPL v2
+Licence: Distributed under the terms of the GPL v3
 
 
-willingness WordPress theme is derived from Underscores starter theme.
+Willingness WordPress theme is derived from Underscores starter theme.
 Underscores Starter Theme - http://underscores.me/
-License: Distributed under the terms of the GPL v2
+License: Distributed under the terms of the GPL v3
 Copyright: Underscores, underscores.me
-
-
-
