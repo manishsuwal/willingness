@@ -470,6 +470,8 @@ z-index: 99999;
 ----------------------------------------------- */
 
 .sticky {
+  background-color:#eef;
+  padding: 25px;
 }
 .hentry {
      margin: 0 0 1.5em;
