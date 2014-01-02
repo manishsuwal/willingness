@@ -197,6 +197,12 @@ require( get_template_directory() . '/inc/customizer.php' );
 require( get_template_directory() . '/inc/jetpack.php' );
 
 
+/**
+* Options.php
+*/
+require (get_template_directory() .'/options.php');
+
+
 /* Custom Header */
 
 $args = array(
@@ -209,10 +215,6 @@ $args = array(
 	'uploads' => true,
 );
 add_theme_support( 'custom-header', $args );
-
-
-/* options.php */
-require (get_template_directory() .'/options.php');
 
 
 /* Body Class */
@@ -239,5 +241,3 @@ function willingness_body_class($classes) {
 
 	return $classes;
 }
-
-
