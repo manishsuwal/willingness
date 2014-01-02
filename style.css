@@ -503,6 +503,19 @@ z-index: 99999;
 	display: none;
 }
 
+.format-aside .entry-content{
+  font-size: 1.3em;
+}
+
+.format-aside .entry-content p{
+  border-left: 5px solid #ddd;
+  padding-left: 10px;
+}
+
+.format-aside .entry-header{
+  display: none;
+}
+
 
 /* =Media
 ----------------------------------------------- */
@@ -1056,9 +1069,4 @@ display: none;
 	font-weight: bold;
 }
 
-
-.format-aside .entry-content{
-  font-style: italic;
-  font-size: 24px;
-}
 
