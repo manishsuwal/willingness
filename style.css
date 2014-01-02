@@ -1057,5 +1057,8 @@ display: none;
 }
 
 
-
+.format-aside .entry-content{
+  font-style: italic;
+  font-size: 24px;
+}
 
