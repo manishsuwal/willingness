@@ -37,13 +37,6 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!--end site-branding -->
 
-		<div id="header-right" class="header-sidebar">
-				<aside id="search-box"><!--start of #search-box -->
-            		<?php get_search_form(); ?>
-        		</aside><!-- end of #search-box -->
-		</div><!--end of header right-->
-
-
 		<!-- Custom Header code from custom-header.php -->
 		<?php $header_image = get_header_image();
 	if ( ! empty( $header_image ) ) { ?>
