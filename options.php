@@ -45,7 +45,7 @@ function willingness_theme_options_init() {
 
 	add_settings_field( 'sample_radio_buttons', __( 'Enable Site Description?', 'willingness' ), 'willingness_settings_field_sample_radio_buttons', 'theme_options', 'general' );
 
-	add_settings_field( 'radio_buttons', __( 'Enable Searchbar?', 'willingness' ), 'willingness_settings_field_radio_buttons', 'theme_options', 'general' );
+
 
 
 
@@ -147,10 +147,10 @@ function willingness_sample_radio_buttons() {
  */
 function willingness_radio_buttons() {
 	$radio_buttons = array(
-		'yes' => array(
-			'value' => 'yes',
-			'label' => __( 'Yes', 'willingness' )
-		),
+    'yes' => array(
+      'value' => 'yes',
+      'label' => __( 'Yes', 'willingness' )
+    ),
 		'no' => array(
 			'value' => 'no',
 			'label' => __( 'No', 'willingness' )
