@@ -42,12 +42,7 @@ function willingness_theme_options_init() {
 	);
 
 
-
 	add_settings_field( 'sample_radio_buttons', __( 'Enable Site Description?', 'willingness' ), 'willingness_settings_field_sample_radio_buttons', 'theme_options', 'general' );
-
-
-
-
 
 }
 add_action( 'admin_init', 'willingness_theme_options_init' );
