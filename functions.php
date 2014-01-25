@@ -241,3 +241,15 @@ function willingness_body_class($classes) {
 
 	return $classes;
 }
+
+
+
+/* Social Icons Start */
+
+add_action( 'init', 'my_register_nav_menus' );
+
+function my_register_nav_menus() {
+  register_nav_menu( 'social', __( 'Social', 'willingness' ) );
+}
+
+/* Social Icons End */

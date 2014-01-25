@@ -21,6 +21,8 @@ and Blueprint http://www.blueprintcss.org/
 /* =Reset
 -------------------------------------------------------------- */
 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1070,3 +1072,222 @@ display: none;
 }
 
 
+/* = Genericons
+----------------------------------------------- */
+
+@font-face {
+	font-family: 'Genericons';
+	src: url('fonts/genericons/font/genericons-regular-webfont.eot');
+	src: url('fonts/genericons/font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/genericons/font/genericons-regular-webfont.woff') format('woff'),
+	     url('fonts/genericons/font/genericons-regular-webfont.ttf') format('truetype'),
+	     url('fonts/genericons/font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+			.screen-reader-text {
+			 position: absolute;
+			 top:      -9999em;
+			 left:     -9999em;
+			}
+
+			#menu-social {
+			 float: right;
+			}
+
+		 	#menu-social ul {
+		 		list-style: none;
+		 		margin:     0 0 25px;
+		 		text-align: center;
+		 	}
+
+ 			#menu-social ul li {
+ 			display:  inline-block;
+ 			position: relative;
+ 			}
+
+ 			#menu-social li a::before {
+ 				content:        '\f408';
+ 				display:        inline-block;
+ 				padding:        0 5px;
+ 				font-family:    'Genericons';
+ 				font-size:      32px;
+ 				vertical-align: top;
+
+ 				-webkit-font-smoothing: antialiased;
+ 			}
+
+ 			#menu-social li a[href*="wordpress.org"]::before,
+ 			#menu-social li a[href*="wordpress.com"]::before {
+ 				content: '\f205';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="wordpress.org"]:hover:before,
+ 			#menu-social li a[href*="wordpress.com"]:hover:before {
+ 				content: '\f205';
+ 				color:   #21759b;
+ 			}
+
+ 			#menu-social li a[href*="facebook.com"]::before {
+ 				content: '\f203';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="facebook.com"]:hover:before {
+ 				content: '\f203';
+ 				color:   #3b5998;
+ 			}
+
+ 			#menu-social li a[href*="twitter.com"]::before {
+ 				content: '\f202';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="twitter.com"]:hover:before {
+ 				content: '\f202';
+ 				color:   #33ccff;
+ 			}
+
+ 			#menu-social li a[href*="dribbble.com"]::before {
+ 				content: '\f201';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="dribbble.com"]:hover:before {
+ 				content: '\f201';
+ 				color:   #ea4c89;
+ 			}
+
+ 			#menu-social li a[href*="plus.google.com"]::before {
+ 				content: '\f218';
+ 				color: #999;
+ 			}
+ 			#menu-social li a[href*="plus.google.com"]:hover:before {
+ 				content: '\f218';
+ 				color: #dd4b39;
+ 			}
+
+ 			#menu-social li a[href*="pinterest.com"]::before {
+ 				content: '\f210';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="pinterest.com"]:hover:before {
+ 				content: '\f210';
+ 				color:   #c8232c;
+ 			}
+
+ 			#menu-social li a[href*="github.com"]::before {
+ 				content: '\f200';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="github.com"]:hover:before {
+ 				content: '\f200';
+ 				color:   #171515;
+ 			}
+
+ 			#menu-social li a[href*="tumblr.com"]::before {
+ 				content: '\f214';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="tumblr.com"]:hover:before {
+ 				content: '\f214';
+ 				color:   #34526f;
+ 			}
+
+ 			#menu-social li a[href*="youtube.com"]::before {
+ 				content: '\f213';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="youtube.com"]:hover:before {
+ 				content: '\f213';
+ 				color:   #c4302b;
+ 			}
+
+ 			#menu-social li a[href*="flickr.com"]::before {
+ 				content: '\f211';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="flickr.com"]:hover:before {
+ 				content: '\f211';
+ 				color:   #ff0084;
+ 			}
+
+ 			#menu-social li a[href*="vimeo.com"]::before {
+ 				content: '\f212';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="vimeo.com"]:hover:before {
+ 				content: '\f212';
+ 				color:   #1AB7EA;
+ 			}
+
+ 			#menu-social li a[href*="instagram.com"]::before {
+ 				content: '\f215';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="instagram.com"]:hover:before {
+ 				content: '\f215';
+ 				color:   #3f729b;
+ 			}
+
+ 			#menu-social li a[href*="codepen.io"]::before {
+ 				content: '\f216';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="codepen.io"]:hover:before {
+ 				content: '\f216';
+ 				color:   #000;
+ 			}
+
+ 			#menu-social li a[href*="linkedin.com"]::before {
+ 				content: '\f208';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="linkedin.com"]:hover:before {
+ 				content: '\f208';
+ 				color:   #0e76a8;
+ 			}
+
+ 			#menu-social li a[href*="path.com"]::before {
+ 				content: '\f219';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="path.com"]:hover:before {
+ 				content: '\f219';
+ 				color:   #AC1C16;
+ 			}
+
+ 			#menu-social li a[href*="github.com"]::before {
+ 				content: '\f200';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="github.com"]:hover:before {
+ 				content: '\f200';
+ 				color:   #121011;
+ 			}
+
+ 			#menu-social li a[href*="skype.com"]::before {
+ 				content: '\f220';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="skype.com"]:hover:before {
+ 				content: '\f220';
+ 				color:   #1DA7ED;
+ 			}
+
+ 			#menu-social li a[href*="reddit.com"]::before {
+ 				content: '\f222';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="reddit.com"]:hover:before {
+ 				content: '\f222';
+ 				color:   #FB2A19;
+ 			}
+
+ 			#menu-social li a[href*="dropbox.com"]::before {
+ 				content: '\f225';
+ 				color:   #999;
+ 			}
+ 			#menu-social li a[href*="dropbox.com"]:hover:before {
+ 				content: '\f225';
+ 				color:   #0C66DE;
+ 			}
