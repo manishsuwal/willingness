@@ -386,6 +386,11 @@ a:active {
 /* =Menu
 ----------------------------------------------- */
 
+.menu{
+	margin: 0 auto !important;
+	display: table;
+}
+
 .navigation-main {
 	clear: both;
 	display: block;
