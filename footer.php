@@ -51,7 +51,7 @@
 			<?php do_action( 'willingness_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'willingness' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'willingness' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'Willingness' ), '<a href="'.esc_url( 'http://enwil.com/willingness' ).'" rel="designer">Willingness</a>','Manish Suwal' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'Willingness' ), '<a href="'.esc_url( 'http://enwil.com/themes/willingness' ).'" rel="designer">Willingness</a>','Manish Suwal' ); ?>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
