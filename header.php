@@ -39,10 +39,6 @@
 		</div><!--end site-branding -->
 
 
-		<!-- Social Media Template Start -->
-		<?php get_template_part( 'menu', 'social' ); ?>
-		<!-- Social Media Template End -->
-
 
 		<!-- Custom Header code from custom-header.php -->
 		<?php $header_image = get_header_image();
