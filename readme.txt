@@ -9,3 +9,9 @@ Willingness WordPress theme is derived from Underscores starter theme.
 Underscores Starter Theme - http://underscores.me/
 License: Distributed under the terms of the GPL v3
 Copyright: Underscores, underscores.me
+
+Version History:
+
+1.0.6
+
+* Enhancement: Incorporate mo.js (https://github.com/themefoundation/mo-js/) for better menu.
