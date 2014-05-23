@@ -391,7 +391,7 @@ a:active {
 .navigation-main {
 	clear: both;
 	display: block;
-	float: left;
+	color: #fff;
 	width: 100%;
 }
 .navigation-main ul {
@@ -400,7 +400,6 @@ a:active {
 	padding-left: 0;
 }
 .navigation-main li {
-	float: left;
 	position: relative;
 }
 .navigation-main a {
@@ -421,7 +420,7 @@ a:active {
 	top: 0;
 }
 .navigation-main ul ul a {
-	width: 200px;
+	white-space: nowrap;
 }
 .navigation-main ul ul li {
 }
@@ -436,6 +435,7 @@ a:active {
 }
 .navigation-main li.current_page_item a,
 .navigation-main li.current-menu-item a {
+	background-color: #444;
 }
 
 .navigation-main ul ul {
@@ -452,10 +452,6 @@ z-index: 99999;
 .menu-toggle {
 	display: none;
 	cursor: pointer;
-}
-
-.main-small-navigation ul {
-	display: none;
 }
 
 
@@ -776,8 +772,8 @@ margin-top: 0px;
 }
 
 .current_page_item {
-	background-color: #444;
-}/* End Menu Navigation*/
+}
+/* End Menu Navigation*/
 
 
 /* Styling HR */
@@ -1074,4 +1070,299 @@ display: none;
 	font-size: 17px;
 	font-weight: bold;
 }
+
+
+
+ /*
+
+ The mo.js stylesheet is heavily influenced by the
+ scalable and modular architecture for CSS as described
+ by Jonathan Snook at http://smacss.com
+
+ mo.js START
+
+ */
+
+
+ .site-header .menu a{
+ 	line-height: 3em;
+ }
+
+ /* =Module Styles
+ -------------------------------------------------------------- */
+
+ /* Pill style links for mobile/tablet */
+
+ .site-header .menu,
+ .site-header .menu *{
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+
+ .site-header .menu{
+ 	text-align: center;
+ }
+
+ .site-header .menu > li{
+ 	display: inline;
+ }
+
+ .site-header .menu > li > a{
+ 	display: inline-block;
+ }
+
+ .site-header .menu li{
+ 	position: relative;
+ 	white-space: nowrap;
+ }
+
+ .site-header .menu li:hover > ul{
+ 	display: block;
+ }
+
+ .site-header .menu a{
+ 	position: relative;
+ 	padding: 0 0.5em;
+
+ }
+
+ .site-header .menu ul{
+ 	position: absolute;
+ 	display: none;
+ 	/*top: 100%;*/
+ 	left: 0;
+ 	z-index: 1000;
+ 	/*margin-top: 0.90em;*/
+ 	text-align: left;
+ }
+
+ .site-header .menu ul li,
+ .site-header .menu ul li a{
+ 	display: block;
+ }
+
+ .site-header .menu ul ul{
+ 	top: 0;
+ 	left: 100%;
+ }
+
+ /* Horizontal drop downs for desktop */
+
+ @media screen and (min-width : 600px) {
+
+ 	.site-header .menu:after{
+ 		visibility: hidden;
+ 		display: block;
+ 		content: "";
+ 		clear: both;
+ 		height: 0;
+ 	}
+
+ 	.site-header .menu > li {
+ 		display: block;
+ 		float: left;
+ 	}
+
+ 	.site-header .menu > li > a{
+ 		margin: 0;
+ 	}
+
+ 	.site-header .menu ul{
+ 		margin-top: 0;
+ 	}
+
+ }
+
+ /* =State Styles
+ -------------------------------------------------------------- */
+
+ /* Toggled Mobile Styles */
+
+ .menu-toggle-button{
+ 	width: 1.5em;
+ 	cursor: pointer;
+ 	font-size: 2em;
+ 	text-align: center;
+ 	display: block;
+ }
+
+ .menu.is-js-menu li:hover > ul{
+ 	display: none;
+ }
+
+ .menu.is-js-menu li.is-open-submenu > ul,
+ .menu.is-js-menu li.is-open-submenu:hover > ul{
+ 	display: block;
+ }
+
+ .menu.is-mobile-menu.menu-arrows{
+ 	text-align: left;
+ }
+
+ .menu.is-mobile-menu.menu-arrows > li > a{
+ 	display: block;
+ 	margin: 0;
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul{
+ 	position: relative;
+ 	top: auto;
+ 	margin-top: 0;
+ 	padding: 0.75em;
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul ul{
+ 	position: relative;
+ 	left: 0;
+ }
+
+ .menu.is-mobile-menu.is-hidden-menu{
+ 	display: none;
+ }
+
+ /* =Arrow Styles
+ -------------------------------------------------------------- */
+
+ .menu.menu-arrows .has-submenu > a{
+ 	padding-right: 3.5em;
+ }
+
+ .menu.menu-arrows .toggle-submenu{
+ 	width: 1.5em;
+ 	display: inline-block;
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	right: 0;
+ }
+
+ /* Standard arrow styles */
+ .menu.menu-arrows .toggle-submenu:after {
+ 	content: '';
+ 	position: absolute;
+ 	top: 50%;
+ 	right: 0.5em;
+ 	margin-top: -3px;
+ 	height: 0;
+ 	width: 0;
+
+ 	border: 5px solid transparent;
+ 	border-top-color: #000;
+ }
+
+ .menu.menu-arrows ul .toggle-submenu:after {
+ 	margin-top: -5px;
+ 	margin-right: -3px;
+
+ 	border-color: transparent;
+ 	border-left-color: #000;
+ }
+
+ .menu.menu-arrows .has-submenu > a{
+ 	padding-right: 2em;
+ }
+
+ /* Javascript menu arrow styles */
+
+ .menu.is-js-menu.menu-arrows .toggle-submenu{
+ 	width: 2.5em;
+ }
+
+ .menu.is-js-menu.menu-arrows .has-submenu > a{
+ 	padding-right: 2.5em;
+ }
+
+ .menu.is-js-menu.menu-arrows .toggle-submenu:after {
+ 	right: 0.8em;
+ }
+
+ .menu.is-js-menu.menu-arrows ul .toggle-submenu:after {
+ 	right: 1.1em;
+ }
+
+ .menu.menu-arrows .is-open-submenu > ul{
+ 	display: block;
+ }
+
+ .menu.menu-arrows .is-open-submenu > a .toggle-submenu:after {
+ 	margin-top: -8px;
+
+ 	border-color: transparent;
+ 	border-bottom-color: #000;
+ }
+
+ .menu.menu-arrows ul .is-open-submenu > a .toggle-submenu:after {
+ 	margin-top: -5px;
+ 	margin-right: 3px;
+
+ 	border-color: transparent;
+ 	border-right-color: #000;
+ }
+
+
+ /* Javascript mobile menu arrow styles */
+ .menu.menu-arrows.is-mobile-menu.menu-arrows ul a .toggle-submenu:after {
+ 	margin-top: -3px;
+ 	margin-right: -3px;
+
+ 	border-color: transparent;
+ 	border-top-color: #000;
+ }
+
+ /* Javascript mobile menu arrow styles */
+ .menu.menu-arrows.is-mobile-menu.menu-arrows ul .is-open-submenu a .toggle-submenu:after {
+ 	margin-top: -8px;
+
+ 	border-color: transparent;
+ 	border-bottom-color: #000;
+ }
+
+
+ /* =Colors
+ -------------------------------------------------------------- */
+
+ .site-header .menu,
+ .site-header .menu a,
+ .site-header .menu li,
+ .site-header .menu ul{
+ 	background: #222;
+ 	color: #fff;
+ }
+
+ .site-header .menu a:hover,
+ .site-header .menu a:focus{
+ 	background: #777;
+ }
+
+ .menu.is-mobile-menu.menu-arrows .toggle-submenu:hover{
+ 	background: rgba( 255, 255, 255, 0.2);
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul,
+ .menu.is-mobile-menu.menu-arrows ul a{
+ 	background: rgba( 255, 255, 255, 0.1);
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul a:hover{
+ 	background: rgba( 255, 255, 255, 0.2);
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul ul a:hover{
+ 	background: rgba( 255, 255, 255, 0.3);
+ }
+
+ .menu.is-mobile-menu.menu-arrows ul ul,
+ .menu.is-mobile-menu.menu-arrows ul ul a{
+ 	background: rgba( 255, 255, 255, 0.2);
+ }
+
+ .menu.is-mobile-menu.menu-arrows .is-open-submenu > a .toggle-submenu{
+ 	background: rgba( 255, 255, 255, 0.1 );
+ }
+
+/* mo.js END */
 
