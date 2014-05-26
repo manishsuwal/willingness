@@ -14,7 +14,7 @@ Version History:
 
 1.1
 
-* Bug Fix: Solve responsive issue for content below 1060px. Content was unreadable in screen below 1060px belause of narrow width.
+* Bug Fix: Solve responsive issue for content below 1060px. Content was unreadable in screen below 1060px because of narrow width.
 
 1.0.6
 
