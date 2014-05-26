@@ -994,7 +994,10 @@ color: #d54e21;
 	#footer-3 {width: 100%;}
 	#footer-4 {width: 100%;}
 	.foo{width: 75%;}
-
+	.site-content {margin: 0 auto; background-color: #fff; padding: 30px; width: 86%;}
+	.no-left.no-right .site-content{margin: 0 auto;}
+	.no-left .site-content{margin: 0 auto;}
+	.no-right .site-content {margin: 0 auto;}
 }
 
 /* Tabled Portrait */
