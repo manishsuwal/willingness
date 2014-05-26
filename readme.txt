@@ -12,6 +12,10 @@ Copyright: Underscores, underscores.me
 
 Version History:
 
+1.1
+
+* Bug Fix: Solve responsive issue for content below 1060px. Content was unreadable in screen below 1060px belause of narrow width.
+
 1.0.6
 
 * Enhancement: Incorporate mo.js (https://github.com/themefoundation/mo-js/) for better menu.
