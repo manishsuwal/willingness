@@ -65,6 +65,109 @@ function willingness_customize_register( $wp_customize ) {
 		'settings' => 'willingness_important_links'
 	)));
 
+
+	/* Theme Options Page to Customizer */
+
+	/* Header Options */
+	$wp_customize->add_panel(
+		'willingness_header_panel',
+		array(
+			'title'       => __( 'Header Options', 'willingness' ),
+			'description' => __( 'Change header related options', 'willingness' ),
+			'priority'    => 500
+		)
+	);
+
+	$wp_customize->add_section(
+		'willingness_header_section',
+		array(
+			'title'   => __( 'Header Area', 'willingness' ),
+			'panel'   => 'willingness_header_panel'
+		)
+	);
+
+	/* Header Area Disable Setting */
+	$wp_customize->add_setting(
+		'willingness_header_area',
+		array(
+			'priority'          => 10,
+			'default'           => 0,
+			'sanitize_callback' => 'willingness_checkbox_sanitize'
+		)
+	);
+
+	$wp_customize->add_control(
+		'willingness_header_area',
+		array(
+			'type'      => 'checkbox',
+			'label'     => __('Check the Box to Remove the Header Area', 'willingness'),
+			'section'   => 'willingness_header_section',
+			'settings'  => 'willingness_header_area'
+		)
+	);
+	/* Header Area Disable Setting End */
+
+	/* Header Description Setting */
+	$wp_customize->add_setting(
+		'willingness_header_description',
+		array(
+			'priority'          => 20,
+			'default'           => 0,
+			'sanitize_callback' => 'willingness_checkbox_sanitize'
+		)
+	);
+
+	$wp_customize->add_control(
+		'willingness_header_description',
+		array(
+			'type'      => 'checkbox',
+			'label'     => __('Check the Box to disable site description', 'willingness'),
+			'section'   => 'willingness_header_section',
+			'settings'  => 'willingness_header_description'
+		)
+	);
+
+	/* Searchbox Setting */
+	$wp_customize->add_setting(
+		'willingness_search_box',
+		array(
+			'priority'          => 30,
+			'default'           => 0,
+			'sanitize_callback' => 'willingness_checkbox_sanitize'
+		)
+	);
+
+	$wp_customize->add_control(
+		'willingness_search_box',
+		array(
+			'type'      => 'checkbox',
+			'label'     => __('Check the Box to disable search box.', 'willingness'),
+			'section'   => 'willingness_header_section',
+			'settings'  => 'willingness_search_box'
+		)
+	);
+	/* Header Description Setting End */
+
+	function willingness_checkbox_sanitize($input) {
+		if ( $input == 1 ) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+	// Sanitize Radio Button
+	function willingness_radio_sanitize( $input, $setting ) {
+		// Ensure input is a slug.
+		$input = sanitize_key( $input );
+
+		// Get list of choices from the control associated with the setting.
+		$choices = $setting->manager->get_control( $setting->id )->choices;
+
+		// If the input is a valid key, return it; otherwise, return the default.
+		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+	}
+
 	function willingness_sanitize_link() {
 		return false;
 	}
