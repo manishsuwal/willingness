@@ -22,4 +22,7 @@
 			$( '.site-title a, .site-description' ).css( 'color', to );
 		} );
 	} );
+	// Theme Links
+	$('.wp-full-overlay-sidebar-content').prepend('<a style="margin-top: 5px;margin-bottom: 5px; margin-left: 87px;"href="http://enwil.com/themes/willingness-gold/" class="button" target="_blank">{pro}</a>'.replace('{pro}',willingness_customizer_obj.pro));
+	$('.wp-full-overlay-sidebar-content').prepend('<a style="margin-top: 5px;margin-bottom: 5px; margin-left: 106px;"href="http://enwil.com/themes/willingness/" class="button" target="_blank">{info}</a>'.replace('{info}',willingness_customizer_obj.info));
 } )( jQuery );
