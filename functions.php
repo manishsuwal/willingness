@@ -196,13 +196,6 @@ require( get_template_directory() . '/inc/customizer.php' );
  */
 require( get_template_directory() . '/inc/jetpack.php' );
 
-
-/**
-* Options.php
-*/
-require (get_template_directory() .'/options.php');
-
-
 /* Custom Header */
 
 $args = array(
