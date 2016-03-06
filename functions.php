@@ -196,13 +196,6 @@ require( get_template_directory() . '/inc/customizer.php' );
  */
 require( get_template_directory() . '/inc/jetpack.php' );
 
-
-/**
-* Options.php
-*/
-require (get_template_directory() .'/options.php');
-
-
 /* Custom Header */
 
 $args = array(
@@ -223,16 +216,15 @@ add_theme_support( 'custom-header', $args );
 add_filter('body_class','willingness_body_class');
 function willingness_body_class($classes) {
 
-	$options = willingness_get_theme_options();
-	$sampleradiobutton = $options['sample_radio_buttons'];
-	$radiobutton = $options['radio_buttons'];
-	$headercheckbox = $options['sample_checkbox'];
+	$headercheckbox    = get_theme_mod( 'willingness_header_area', '0' );
+	$headerdescription = get_theme_mod( 'willingness_header_description', '0' );
+	$searchbox         = get_theme_mod( 'willingness_search_box', '0' );
 
-	if ($headercheckbox == 'on')
+	if ($headercheckbox == '1')
 		$classes[] = 'no-header';
-	if($sampleradiobutton == 'no')
+	if($headerdescription == '1')
 		$classes[] = 'no-description';
-	if ($radiobutton == 'no')
+	if ($searchbox == '1')
 		$classes[] = 'no-searchbar';
 	if (!is_active_sidebar('sidebar-1'))
 		$classes[] = 'no-left';
