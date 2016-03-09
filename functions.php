@@ -85,7 +85,14 @@ function willingness_register_custom_background() {
 }
 add_action( 'after_setup_theme', 'willingness_register_custom_background' );
 
+add_action( 'widgets_init', 'willingness_widgets_init' );
 
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function willingness_widgets_init() {
 /**
  * Register widgetized area
  */
@@ -149,7 +156,7 @@ register_sidebar( array(
   ) );
 
   /* End of footer Sidebar */
-
+}
 
 /**
  * Enqueue scripts and styles
