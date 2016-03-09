@@ -32,6 +32,9 @@ function willingness_setup() {
 	 */
 	add_theme_support( 'automatic-feed-links' );
 
+	// Title Tag Support
+	add_theme_support( "title-tag" );
+
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
